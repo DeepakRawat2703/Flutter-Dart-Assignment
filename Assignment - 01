@@ -145,3 +145,43 @@ false
 It is Wrong
 q has null value
 10
+
+
+//Cascade Program 
+class Hello {
+  var a;
+  var b;
+  void setA(x) { 
+    this.a = x;
+  } 
+ 
+  void setB(y) { 
+    this.b = y;
+  } 
+  void showVal(){
+    print(this.a);
+    print(this.b);
+  }
+}  
+void main() { 
+  
+  Hello de = new Hello(); 
+  Hello de1 = new Hello();
+  
+  print( "Without Cascade Notation");
+  de.setA(30);
+  de.setB(47);
+  de.showVal();
+  print( "With Cascade Notation");
+  de1..setA(28) 
+    ..setB(79)
+    ..showVal();    
+}
+
+Output:
+Without Cascade Notation
+30
+47
+With Cascade Notation
+28
+79
