@@ -1,0 +1,147 @@
+void main() {
+  int a = 15;
+  int b = 24;
+  int c = 36;
+  String a1 = 'Garhwal';
+  double b1 = 7.48;
+  
+//Aritmetic Operator
+  int add = a + b;
+  print("The sum of $a and $b : $add ");
+  int add1 = b + c;
+  print("The sum of $b and $c : $add1 ");
+  int sub = a - b;
+  print("The difference of $a and $b : $sub ");
+  int sub1 = b - c;
+  print("The difference of $b and $c : $sub1 ");
+  int multi = a * b;
+  print("The multiplication of $a and $b : $multi ");
+  int multi1 = b * c;
+  print("The multiplication of $b and $c : $multi1 ");
+  var div = a / b;
+  print("The division of $a and $b : $div ");
+  var div1 = b / c;
+  print("The division of $b and $c : $div1 ");
+  int div2 = a ~/ b;
+  print("The division of $a and $b : $div2 ");
+  int div3 = b ~/ c;
+  print("The division of $b and $c : $div3 ");
+  int mod = a % b;
+  print("The modulus of $a and $b : $mod ");
+  int mod1 = b % c;
+  print("The modulus of $b and $c : $mod1 ");
+  //Bitwise AND
+  print("a & b = ${(a & b)}");
+
+  //Bitwise OR
+  print("a | b = ${(a | b)}");
+
+  //Bitwise XOR
+  print("a ^ b = ${(a ^ b)}");
+
+  //Binary Complement Operator
+  print("~a = ${(~a)}");
+
+  //Binary Left Shift Operator
+  c = a << 2;
+  print("a << 1 = ${c}");
+
+  //Binary Right Shift Operator
+  c = a >> 2;
+  print("a >> 1  = ${c}");
+
+  //Relational and Type Test
+  
+  // Greater between a and b
+  var c1 = a > b;
+  print("a is greater than b is $c1");
+
+  // Smaller between a and b
+  var d = a < b;
+  print("a is smaller than b is $d");
+
+  // Greater than or equal to between a and b
+  var e = a >= b;
+  print("a is greater than b is $e");
+
+  // Less than or equal to between a and b
+  var f = a <= b;
+  print("a is smaller than b is $f");
+
+  // Equality between a and b
+  var g = b == a;
+  print("a and b are equal is $g");
+
+  // Unequality between a and b
+  var h = b != a;
+  print("a and b are not equal is $h");
+
+  // Using is to compare
+  print(a1 is String);
+
+  // Using is! to compare
+  print(b1 is! int);
+  
+  //Logical Operator
+  
+  // Using And Operator
+    bool j = a > 10 && b < 10;
+    print(j);
+ 
+  // Using Or Operator
+    bool k = a > 10 || b < 10;
+    print(k);
+ 
+  // Using Not Operator
+    bool m = !(a > 10);
+    print(m);
+  // Conditional Statement
+    var n = (a < 10) ? "It is Correct" : "It is Wrong";
+    print(n);
+ 
+    // Conditional statement
+    
+    var q = null;
+    var p = q ??"q has null value";
+    print(p);
+ 
+    // After assigning value to n
+    int o = 10;
+    p = q ?? o ;
+    print(p);
+
+}
+
+Output: 
+The sum of 15 and 24 : 39 
+The sum of 24 and 36 : 60
+The difference of 15 and 24 : -9
+The difference of 24 and 36 : -12
+The multiplication of 15 and 24 : 360
+The multiplication of 24 and 36 : 864
+The division of 15 and 24 : 0.625
+The division of 24 and 36 : 0.6666666666666666
+The division of 15 and 24 : 0
+The division of 24 and 36 : 0
+The modulus of 15 and 24 : 15
+The modulus of 24 and 36 : 24
+a & b = 8
+a | b = 31
+a ^ b = 23
+~a = -16
+a << 1 = 60
+a >> 1  = 3
+a is greater than b is false
+a is smaller than b is true
+a is greater than b is false
+a is smaller than b is true
+a and b are equal is false
+a and b are not equal is true
+true
+true
+false
+true
+false
+It is Wrong
+q has null value
+10
